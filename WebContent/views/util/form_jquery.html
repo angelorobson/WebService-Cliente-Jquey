@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html >
+<head >
+<meta charset="utf-8">
+<title>Efetuar Cadastro </title> 
+ <link href="../assets/css/css_formulario/estilo_form.css" rel="stylesheet" type="text/css" />
+ <script type="text/javascript" src="../assets/js/jquery/biblioteca/jquery.min.js" ></script>
+ <script type="text/javascript" src="../assets/js/jquery/funcoes_jquery/funcoes.js" ></script>
+ <script type="text/javascript" src="../assets/js/jquery/funcoes_jquery/get.js"></script>
+<!--  <script type="text/javascript" src="../assets/js/jquery/funcoes_jquery/ajax.js"></script> -->
+ <script type="text/javascript">
+ $(document).ready(function () {
+		
+		$("#cadastrarTurma").click(function ( e ) {
+			
+			
+			$("#tabela").load("listar.html");
+			
+		});
+		
+		
+// 		$("#carregando").hide();
+		
+// 		$("#carregando").ajaxStart(function () {
+			
+// 			$(this).show();
+// 		})
+		
+// 		$("#carregando").ajaxStop(function() {
+			
+// 			$(this).hide();
+// 		})
+		
+		
+	});
+
+ </script>
+</head>
+<body>
+
+   <div id="contact">
+   
+    <h1>Efetuar Cadastro </h1>
+    
+        <fieldset>
+            <label for="name">Nome: </label>
+            <input type="text" id="txtTurma"  placeholder="Nome" />
+           
+            <label for="email">E-mail:</label>
+            <input type="text" id="Turmaemail"  placeholder="E-mail" />
+           
+       
+    
+                <label for="telefone">Telefone: </label>
+                <input id="turmatelefone" placeholder="Telefone" >
+                
+                <br />
+                <br />
+               
+
+                
+                <input type="button" value="Efetuar Cadastro" id="cadastrarTurma" />
+               
+     </fieldset>
+     
+   </div>
+     
+     
+     <div id="tabela" >
+     
+       
+    <table class="table table-hover tabela-dados" id="prontuario-aberto">
+    
+ <tr> 
+    
+     <th>Nome:</th> 
+     <th>Email:</th> 
+     <th>Telefone:</th> 
+     <th>Ação:</th> 
+    
+</tr> 
+
+     
+     
+  
+     
+    </div>
+
+</body>
+</html>
